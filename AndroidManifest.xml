@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myapp.groovie"
+    android:versionCode="1"
+    android:versionName="bêta" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/groovie_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.myapp.groovie.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.InscriptionActivity"
+            android:label="@string/title_activity_inscription" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.AccueilActivity"
+            android:label="@string/title_activity_accueil"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.MesLieuxActivity"
+            android:label="@string/title_activity_mes_lieux" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.NotificationsActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_notifications"
+            android:parentActivityName="com.myapp.groovie.LesLieuxActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.AjouterLieuActivity"
+            android:label="@string/title_activity_ajouter_lieu"
+            android:parentActivityName="com.myapp.groovie.LesLieuxActivity" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.MongroupeActivity"
+            android:label="@string/title_activity_mongroupe" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.ParametresActivity"
+            android:label="@string/title_activity_parametres" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.ListeUtilisateursActivity"
+            android:label="@string/title_activity_liste_utilisateurs" >
+        </activity>
+
+        <service android:name="com.myapp.groovie.GroovieService" >
+        </service>
+
+        <activity
+            android:name="com.myapp.groovie.ListeInvitationsActivtity"
+            android:label="@string/title_activity_liste_invitations_activtity" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.LesLieuxActivity"
+            android:label="@string/title_activity_les_lieux"
+            android:parentActivityName="com.myapp.groovie.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.GroupeEtUtilisateursActivity"
+            android:label="@string/title_activity_groupe_et_utilisateurs"
+            android:parentActivityName="com.myapp.groovie.LesLieuxActivity" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.MesAutresGroupesActivity"
+            android:label="@string/title_activity_mes_autres_groupes" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.ListeDemandesActivity"
+            android:label="@string/title_activity_liste_demandes" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.ConfirmationInscription"
+            android:label="@string/title_activity_confirmation_inscription" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.RecupererCompteActivity"
+            android:label="@string/title_activity_recuperer_compte" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.AideActivity"
+            android:label="@string/title_activity_aide" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.MonCompteActivity"
+            android:label="@string/title_activity_mon_compte" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.SupprimerCompteActivity"
+            android:label="@string/title_activity_supprimer_compte" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.ProfilActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_profil"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.ProfilUtilisateur"
+            android:label="@string/title_activity_profil_utilisateur" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.MapActivity"
+            android:label="@string/title_activity_map" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.LieuDetailsActivity"
+            android:label="@string/title_activity_lieu_details" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.ConfidentialiteActivity"
+            android:label="@string/title_activity_confidentialite" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.GroupeDetailsActivity"
+            android:label="@string/title_activity_groupe_details" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.DonneesConsommationActivity"
+            android:label="@string/title_activity_donnees_consommation" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDaAt5ZtQRD2-IUml-q0gnbsQ1d-jhqO1A" />
+
+        <activity
+            android:name="com.myapp.groovie.PhotoUserActivity"
+            android:label="@string/title_activity_photo_user" >
+        </activity>
+
+        <receiver android:name="com.myapp.groovie.GPSUpdateReceiver" >
+            <intent-filter>
+                <action android:name="com.myapp.groovie.intent.action.GPSUpdate" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.myapp.groovie.MoisConsommationActivity"
+            android:label="@string/title_activity_mois_consommation" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.NotificationsLieuActivity"
+            android:label="@string/title_activity_notifications_lieu" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.ChangerContactActivity"
+            android:label="@string/title_activity_changer_contact" >
+        </activity>
+        <activity
+            android:name="com.myapp.groovie.PreferencesNotificationActivity"
+            android:label="@string/title_activity_preferences_notification" >
+        </activity>
+    </application>
+
+</manifest>
