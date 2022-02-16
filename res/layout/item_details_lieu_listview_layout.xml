@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/item_details_lieu_ImageView_icone"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="Image du lieu"
+        android:src="@drawable/ic_action_help" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_details_lieu_ImageView_icone"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/item_details_lieu_textView_libelleDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="details"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_details_lieu_textView_valueDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="valeur" />
+    </LinearLayout>
+
+</RelativeLayout>

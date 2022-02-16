@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/GroupeEtUtilisateur_menu_action_tous_utilisateurs"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Tous les utilisateurs"/>
+    
+    <item
+        android:id="@+id/GroupeEtUtilisateur_menu_action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Paramètres"/>
+
+</menu>

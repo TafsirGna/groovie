@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/mes_lieux_menu_action_actualiser"
+        android:title="Actualiser"/>
+    <item
+        android:id="@+id/mes_lieux_menu_action_mongroupe"
+        android:title="Mon groupe"/>
+    <item
+        android:id="@+id/mes_lieux_menu_action_mesnotifications"
+        android:title="Voir Notifications"/>
+     <item
+        android:id="@+id/mes_lieux_menu_action_map"
+        android:title="Mes Lieux sur la carte"/>
+    <item
+        android:id="@+id/mes_lieux_menu_action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>

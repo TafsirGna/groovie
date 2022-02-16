@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Groovie</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="hello_world"><h1><b>Bienvenue sur Groovie!</b></h1></string>
+    <string name="messageBienvenue"><i>Groovie se veut d\'être une application qui vous assiste au quotidien dans la géolocalisation de différentes lieux de vente de produits fournis par votre groupe d\'amis. Il sera donc votre compagnon idéal dans l\'évaluation de prix de produits à commencer par le carburant</i></string>
+    <string name="title_activity_bienvenue">BienvenueActivity</string>
+    <string name="StringbtInscription">S\'inscrire</string>
+    <string name="title_activity_inscription">Inscription</string>
+    <string name="StringBtSinscrire"> Je valide </string>
+    <string name="title_activity_accueil">Accueil</string>
+    <string name="titreListedesLieux"><b><u><i>Liste des Lieux</i></u></b></string>
+    <string name="title_activity_mes_lieux">Mes Lieux</string>
+    <string name="title_activity_notifications">Notifications</string>
+    <string name="titreListedemesLieux"><b><u><i>Liste de mes lieux</i></u></b></string>
+    <string name="titreListeNotifications"><b><u><i>Liste des notifications</i></u></b></string>
+    <string name="title_activity_ajouter_lieu">Ajouter un lieu</string>
+    <string name="titreajouterLieu"><i><b>Remplissez les champs suivants</b></i></string>
+    <string name="StringTitreLieu"><i><b>Indication:</b></i></string>
+    <string name="StringLocationLieu"><i><b>Localisation:</b></i></string>
+    <string name="StringPrixLieu"><i><b>Prix actuelle:</b></i></string>
+    <string name="StringCartographie"><i><b>Entrer la cartographie:</b></i></string>
+    <string name="StringLongitude"><i><b>Longitude:</b></i></string>
+    <string name="StringLatitude"><i><b>Latitude:</b></i></string>
+    <string name="title_activity_mongroupe">Mon groupe</string>
+    <string name="title_activity_parametres">Paramètres</string>
+    <string name="titreListeMonGroupe"><b><u><i>Membres de mon groupe</i></u></b></string>
+    <string name="title_activity_liste_utilisateurs">Utilisateurs</string>
+    <string name="titreListeUtilisateurs"><b><u><i>Utilisateurs de Groovie</i></u></b></string>
+    <string name="title_activity_liste_invitations_activtity">Invitations</string>
+    <string name="title_activity_les_lieux">Lieux</string>
+    <string name="title_activity_groupe_et_utilisateurs">Mes groupes</string>
+    <string name="title_activity_mes_autres_groupes">MesAutresGroupesActivity</string>
+    <string name="title_activity_liste_demandes">ListeDemandesActivity</string>
+    <string name="menu_action_picture">Prendre une photo</string>
+    <string name="title_activity_confirmation_inscription">Validation Inscription</string>
+    <string name="EnteteConfirmationDonnees"><b><i>Veuillez fournir ci-dessous le code de confirmation envoyé dans votre boîte mail</i></b></string>
+    <string name="title_activity_recuperer_compte">Récupération du compte</string>
+    <string name="EnteteRecuperationcompte"><b><i>Veuillez fournir ci-dessus votre numéro de téléphone ainsi que votre mot de passe défini lors de l\'inscription</i></b></string>
+    <string name="title_activity_aide">Aide</string>
+    <string name="title_activity_about">A propos</string>
+    <string name="title_activity_mon_compte">Mon Compte</string>
+    <string name="title_activity_supprimer_compte">Suppression du Compte</string>
+    <string name="EnteteSuppressioncompte"><b><i>Afin de supprimer votre compte ,Veuillez fournir ci-dessus votre mot de passe défini lors de l\'inscription</i></b></string>
+    <string name="title_activity_profil">Profil</string>
+    <string name="EnteteProfilModification"><b><i>Veuillez modifier la photo de profil ainsi que les détails de votre profil avant de valider la modification</i></b></string>
+    <string name="title_activity_profil_utilisateur">ProfilUtilisateur</string>
+    <string name="title_activity_map">Localisation du lieu</string>
+    <string name="title_activity_lieu_details">Lieu</string>
+    <string name="title_activity_confidentialite">Confidentialité</string>
+    <string name="title_activity_groupe_details">Informations du groupe</string>
+    <string name="title_activity_donnees_consommation">Donnees de consommation</string>
+    <string name="map_entete_text"><b><i>Veuillez fournir ci-dessus la localisation du lieu choisi</i></b></string>
+    <string name="title_activity_photo_user">Photo</string>
+    <string name="title_activity_mois_consommation">Détails de consommation</string>
+    <string name="title_activity_notifications_lieu">Notifications du lieu</string>
+    <string name="title_activity_changer_contact">Changer Contact</string>
+    <string name="changer_contact_entete">Afin de modifier votre contact, veuillez entrer le nouveau numéro </string>
+    <string name="title_activity_preferences_notification">Préférences</string>
+    <string name="checkbox_password_forgotten_text"> Avez-vous oublié votre mot de passe? </string>
+    <string name="recuperer_compte_entete_indication"><b><i>Veuillez fournir ci-dessous votre email et valider</i></b> </string>
+
+</resources>

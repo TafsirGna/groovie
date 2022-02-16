@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Paramètres généraux">
+        <CheckBoxPreference
+            android:key="limitation_donnees_key"
+            android:summary="Permet d'éviter le téléchargement de contenus lourds(photos,images) des lieux"
+            android:title="Limitation de données" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:key="paysage_picture_key"
+            android:summaryOff="Désactivée"
+            android:summaryOn="Activée"
+            android:title="Prendre photo en paysage" >
+        </CheckBoxPreference>
+
+        <ListPreference
+            android:dialogTitle="Localisation"
+            android:entries="@array/liste_departements"
+            android:entryValues="@array/liste_departements"
+            android:key="localisation_contenue_listpreference_key"
+            android:summary="Modifier le contenu affiché en fonction de la localisation"
+            android:title="Localisation du contenu" >
+        </ListPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Notifications de Lieu" >
+        <RingtonePreference
+            android:key="sonnerie_notifs_lieu_key"
+            android:title="Son de notification" >
+        </RingtonePreference>
+
+        <CheckBoxPreference
+            android:key="vibreur_notifs_lieu_key"
+            android:summaryOff="Désactivée"
+            android:summaryOn="Activée"
+            android:title="Vibreur" >
+        </CheckBoxPreference>
+
+        <ListPreference
+            android:dialogTitle="Choisissez une couleur"
+            android:entries="@array/liste_couleurs_fr"
+            android:entryValues="@array/liste_couleurs_fr"
+            android:key="voyant_notifs_lieu_key"
+            android:title="Voyant" >
+        </ListPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Notifications de Groupe" >
+        <RingtonePreference
+            android:key="sonnerie_notifs_groupe_key"
+            android:title="Son de notification" >
+        </RingtonePreference>
+
+        <CheckBoxPreference
+            android:key="vibreur_notifs_groupe_key"
+            android:summaryOff="Désactivée"
+            android:summaryOn="Activée"
+            android:title="Vibreur" >
+        </CheckBoxPreference>
+
+        <ListPreference
+            android:dialogTitle="Choisissez une couleur"
+            android:entries="@array/liste_couleurs_fr"
+            android:entryValues="@array/liste_couleurs_fr"
+            android:key="voyant_notifs_groupe_key"
+            android:title="Voyant" >
+        </ListPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/ajouter_lieu_menu_action_takePicture"
+        android:title="@string/menu_action_picture"/>
+    <item
+        android:id="@+id/ajouter_lieu_menu_action_valider"
+        android:showAsAction="always"
+        android:title="Valider"/>
+
+</menu>

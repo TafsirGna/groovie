@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/layout_modifierlieu_dialogbox_groupe_intitule_quantite"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="icone quantite"
+            android:src="@drawable/icone_quantite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrer la quantité" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_modifierlieu_dialogbox_groupe_editText_quantite"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_modifierlieu_dialogbox_groupe_intitule_quantite" 
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/layout_modifierlieu_dialogbox_editText_quantite"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/layout_modifierlieu_dialogbox_editText_mesure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:enabled="false"
+            android:text="Litres" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/layout_modifierlieu_dialogbox_checkbox_entrerprix"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_modifierlieu_dialogbox_groupe_editText_quantite"
+        android:text="Changer le prix pratiqué"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layout_modifierlieu_dialogbox_groupe_intitule_prix"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_modifierlieu_dialogbox_checkbox_entrerprix"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="icone prix"
+            android:src="@drawable/icone_prix" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrer le prix" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/layout_modifierlieu_dialogbox_editText_prix"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_modifierlieu_dialogbox_groupe_intitule_prix"
+        android:inputType="number" 
+        android:visibility="gone"/>
+
+</RelativeLayout>

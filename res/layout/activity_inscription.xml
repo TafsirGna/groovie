@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".InscriptionActivity" >
+
+    <TableLayout
+        android:id="@+id/inscription_layout_entete_bienvenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world" />
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inscription_layout_entete_bienvenue"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/inscription_layout_logo_groovie"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="Icone de l&apos;application Groovie"
+            android:src="@drawable/groovie_logo" />
+
+        <EditText
+            android:id="@+id/inscription_layout_editText_pseudonyme"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inscription_layout_logo_groovie"
+            android:hint="Pseudonyme..." />
+
+        <EditText
+            android:id="@+id/inscription_layout_editText_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inscription_layout_editText_pseudonyme"
+            android:hint="Email..."
+            android:inputType="textEmailAddress" />
+
+        <LinearLayout
+            android:id="@+id/inscription_layout_groupe_IndicatifetNumero"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inscription_layout_editText_email"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/inscription_layout_editText_indicatif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="+229"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/inscription_layout_editText_telephone"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:hint="Téléphone"
+                android:inputType="phone"
+                android:maxLength="8" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/inscription_layout_spinner_departement"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inscription_layout_groupe_IndicatifetNumero" />
+
+        <EditText
+            android:id="@+id/inscription_layout_editText_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inscription_layout_spinner_departement"
+            android:hint="Mot de passe"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/inscription_layout_editText_password"
+            android:textColor="#FF0000"
+            android:text="* Veuillez conserver votre mot de passe afin de récupérer votre compte en cas de problème"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

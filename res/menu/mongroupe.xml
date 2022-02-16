@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--
+    <item
+        android:id="@+id/mon_groupe_menu_action_actualiser"
+        android:title="Actualiser"/>
+    -->
+    <item
+        android:id="@+id/mon_groupe_menu_action_tous_utilisateurs"
+        android:title="Tous les utilisateurs"/>
+    <item
+        android:id="@+id/mon_groupe_menu_action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>

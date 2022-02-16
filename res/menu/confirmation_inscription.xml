@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   <item
+        android:id="@+id/confirmation_inscription_action_refresh"
+        android:icon="@drawable/ic_action_refresh"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="load"/>
+    <item
+        android:id="@+id/confirmation_inscription_action_suivant"
+        android:orderInCategory="200"
+        android:showAsAction="always"
+        android:title="Suivant"/>
+
+</menu>

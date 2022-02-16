@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".GroupeDetailsActivity" >
+
+    <ImageView
+        android:id="@+id/groupe_details_layout_imageGroupe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:contentDescription="Image du groupe"
+        android:src="@drawable/icone_groupe" />
+
+    <LinearLayout
+        android:id="@+id/groupe_details_layout_groupe_intitule_infosGroupe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groupe_details_layout_imageGroupe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="Image du groupe"
+            android:src="@drawable/ic_action_help" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informations du groupe" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/groupe_details_layout_listView_infosGroupe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groupe_details_layout_groupe_intitule_infosGroupe" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/groupe_details_layout_groupe_intitule_membres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groupe_details_layout_listView_infosGroupe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="Image du groupe"
+            android:src="@drawable/ic_action_help" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Liste des membres" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/groupe_details_layout_imageView_plus_membres"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/groupe_details_layout_groupe_intitule_membres"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Image pour plus d&apos;informations"
+        android:src="@drawable/icone_plus" />
+
+    <LinearLayout
+        android:id="@+id/groupe_details_layout_groupe_intitule_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groupe_details_layout_imageView_plus_membres"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="Image du groupe"
+            android:src="@drawable/ic_action_help" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Liste des notifications" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/groupe_details_layout_imageView_plus_notifications"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/groupe_details_layout_groupe_intitule_notifications"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Image pour plus d&apos;informations"
+        android:src="@drawable/icone_plus" />
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/modifier_profil_layout_dialogbox_textView_pseudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrer le nouveau pseudonyme"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/modifier_profil_layout_dialogbox_editText_pseudo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modifier_profil_layout_dialogbox_textView_pseudo"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/modifier_profil_layout_dialogbox_textView_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modifier_profil_layout_dialogbox_editText_pseudo"
+        android:layout_marginTop="10dp"
+        android:text="Entrer le nouvel email"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/modifier_profil_layout_dialogbox_editText_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modifier_profil_layout_dialogbox_textView_email"
+        android:layout_marginTop="10dp"
+        android:inputType="textEmailAddress"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/modifier_profil_layout_dialogbox_textView_departement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modifier_profil_layout_dialogbox_editText_email"
+        android:layout_marginTop="10dp"
+        android:text="Entrer votre nouveau département"
+        android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/modifier_profil_layout_dialogbox_spinner_departement"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modifier_profil_layout_dialogbox_textView_departement"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/modifier_profil_layout_dialogbox_textView_password1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modifier_profil_layout_dialogbox_spinner_departement"
+        android:layout_marginTop="10dp"
+        android:text="Entrer le nouveau mot de passe"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/modifier_profil_layout_dialogbox_editText_password1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modifier_profil_layout_dialogbox_textView_password1"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/modifier_profil_layout_dialogbox_textView_password2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modifier_profil_layout_dialogbox_editText_password1"
+        android:layout_marginTop="10dp"
+        android:text="Confirmer le nouveau mot de passe"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/modifier_profil_layout_dialogbox_editText_password2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modifier_profil_layout_dialogbox_textView_password2"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:visibility="gone" />
+
+</RelativeLayout>
